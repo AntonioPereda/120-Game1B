@@ -1,0 +1,164 @@
+{
+    "Title": "The 5 Rooms",
+    "Credits": "Created by Antonio Pereda. Original engine made by Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "L1",
+    "Locations": {
+        "L1": {
+            "Body": "This room is fairly empty. On a scratchy wall, it is engraved: 'NO, YOU CAN NOT ESCAPE MY OVERSIGHT FOR YOUR GRIMM END NOW ENROACHES EVER SLOWLY'",
+            "Choices": [
+                {
+                    "Text": "Left",
+                    "Target": "L5"
+                }, 
+                {
+                    "Text": "Right",
+                    "Target": "L2"
+                }, 
+                {
+                    "Text": "Riddle",
+                    "Riddle": "A computer is waiting for your answer...",
+                    "Correct": "Somewhere else, you hear something unlock. Success! The computer shows on screen: 'Place that key to the left'",
+                    "Incorrect": "The computer beeps at you agrily. Are you sure you understood the message correctly?",
+                    "Solution": "freedom",
+                    "Target": "L1"
+                },
+                {
+                    "Text": "Glasses",
+                    "Responce": "You wear the weird glassess...",
+                    "Target": "L1_I"
+                }
+            ]
+            
+        },
+        "L1_I": {
+            "Body": "This room is fairly empty. On a scratchy wall, it is engraved: 'NoyoUcannotescapeMyOversightForyourGrimmEndNowenRoachesEverSlowly'",
+            "Solution": "TEST",
+            "Choices": [
+                {
+                    "Text": "Glasses",
+                    "Responce": "You took off the glassess...",
+                    "Target": "L1"
+                }
+            ]
+            
+        },
+        "L2": {
+            "Body": "For some reason, this room is actually quite nice and comfy. A fireplace, a fridge, comforatble seats, and no Homeowners Association to annoy you!",
+            "Choices": [
+                {
+                    "Text": "Left",
+                    "Target": "L1"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "L3"
+                },
+                {
+                    "Text": "Riddle",
+                    "Riddle": "A computer is waiting for your answer...",
+                    "Correct": "Somewhere else, you hear something unlock. Its the final stretch!",
+                    "Incorrect": "You see a bunch of steam rise from the computer. It mustve not liked that answer...",
+                    "Solution": "3013",
+                    "Target": "L2"
+                },
+                {
+                    "Text": "Paper",
+                    "Responce": "A long strip of paper is taped to the wall. On it, it reads, 'URRP1SZLVIUHHGRP', whatever that means...",
+                    "Target": "L2"
+                }
+            ]
+        },
+        "L3": {
+            "Body": "The room is painted with arrows painted towards a metal door. This must be how you escape.",
+            "Choices": [
+                {
+                    "Text": "Left",
+                    "Target": "L2"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "L4"
+                },
+                {
+                    "Text": "The Door",
+                    "Riddle": "A computer is asking you... 'What day is it today?'",
+                    "Correct": "The door swung open!",
+                    "Incorrect": "The computer shows only one thing: '>:('. Probally got it wrong...'",
+                    "Solution": "april 8 2024",
+                    "Target": "EXIT"
+                },
+                {
+                    "Text": "Camera",
+                    "Responce": "The camera has six pictures taken of 6 squares, but one has a hole in it. On the lens, the keyword is engraved: 'POLAROID' ",
+                    "Target": "L4"
+                }
+
+            ]
+        },
+        "L4": {
+            "Body": "The room is plastered with posters, not a speck of concrete wall to be seen. All of them seem pretty old. Scattered around, there are instruments everywhere.",
+            "Choices": [
+                {
+                    "Text": "Left",
+                    "Target": "L3"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "L5"
+                },
+                {
+                    "Text": "Riddle",
+                    "Riddle": "A computer is waiting for your answer...",
+                    "Correct": "Somewhere else, you hear something unlock. Success! The computer shows on screen: 'LEFT3'",
+                    "Incorrect": "You hear a circus theme start to play. It seems you got something wrong...",
+                    "Solution": ["5","five"],
+                    "Target": "L4"
+                },
+                {
+                    "Text": "Radio",
+                    "Responce": ["You tune the radio to Rock'N Roll", "You tune the radio to EDM", "You tune the radio to Slow Jazz", "You tune the radio to Hip-Hop", "You tune the radio to Classial"],
+                    "Target": "L4"
+                }
+            ]
+        },
+        "L5": {
+            "Body": "You observe the room to completely empty and void. Nothing, not even a window or scratch except for a small hole in the ceeling.",
+            "Choices": [
+                {
+                    "Text": "Left",
+                    "Target": "L4"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "L1"
+                },
+                {
+                    "Text": "Riddle",
+                    "Riddle": "A computer is waiting for your answer...",
+                    "Correct": "Somewhere else, you hear something unlock. Success! The computer screen shows you a bunch of numbers: 101111000101",
+                    "Incorrect": "The room shakes a little as you submit your answer. Probally got that wrong...",
+                    "Solution": "polaroid",
+                    "Target": "L5"
+                },
+                {
+                    "Text": "Small Hole",
+                    "Responce": ["You peep through the small hole and see some daylight shine through...","You peep through the small hole and cant see anything...must be night time...","You peep through the small hole and cant see anything...must be night time...Right?"],
+                    "Target": "L5"
+                }
+            ]
+        },"EXIT": {
+            "Body": "Was it all a dream, or something else? Rather anticlimatic for and ending, but definitely is one",
+            "Choices": [
+                {
+                    "Text": "END",
+                    "Target": "END"
+                }
+            ]
+            
+        }
+        ,"END": {
+            "Body": "The End"
+            
+        }
+    }
+}
